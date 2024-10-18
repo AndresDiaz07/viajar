@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu > li {
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+}
+
+.menu > li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu > li a:hover {
+    color: #f9c410;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    list-style-type: none;
+    text-align: left;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f9c410;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/*carrusel*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#conteItemscarrusel{
+
+    height: 600px;
+    overflow: hidden;/*se utiliza para esconder todos los items */
+    
+}
+
+.itemcarrusel{
+  
+    height: 600px;
+    position:relative;
+
+}
+.tarjetacarrusel{
+    background-color: rgb(11, 80, 80);
+    height: 100%;
+}
+.flechascarucel{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+/*comienza cada estilo de cada div*/
+
+#tarjetaCarrusel-1{
+    background:url(mexico.png);
+
+}
+#tarjetaCarrusel-2{
+    background:url(1img.jpg);
+   
+    
+}
+#tarjetaCarrusel-3{
+    background:url(2img.jpg);
+}
+#tarjetaCarrusel-4{
+    background:url(3img.png);
+
+}
+#tarjetaCarrusel-5{
+    background:url(me1.jpg);
+
+}
+#tarjetaCarrusel-6{
+    background:url(me2.jpg);
+
+}
+#tarjetaCarrusel-7{
+    background:url(me3.jpg);
+
+}
+#tarjetaCarrusel-8{
+    background:url(me4.jpg);
+
+}
+a{
+    text-decoration: none;
+}
+i{
+    color:black;
+}
+
+#contePuntos{
+  
+    display: flex;
+    justify-content: space-around;
+}
+#contePuntos > a{
+    font-size: 2em;
+    font-style: none;
+    color:white;
+}
+
+/*infomacion*/
+.info{
+    margin: 20px auto;
+    width: 75%;
+    height: 50%;
+}
+h2{
+    font-weight: normal;
+}
+/*div info*/
+.contenedor{
+
+    height: 2700px;
+}
+.in_peque{
+width: 30%;
+margin: 40px;
+box-shadow: 0px 0px 20px #8d8686;
+}
+
+#peq1{
+    position: relative;
+    right: 20%;
+}
+#peq2{
+    position: relative;
+    top: -940px;
+    left: 20%;
+}
+#peq3{
+    position: relative;
+    right: 20%;
+    top: -800px;
+}
+#peq4{
+    position: relative;
+    top: -1512px;
+    left: 20%;
+}
+#peq5{
+    position:relative;
+    top: -1470px;
+}
+
+img{
+    margin: 10px;
+}

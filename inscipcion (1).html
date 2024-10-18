@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usuario</title>
+    <link rel="stylesheet" type="text/css" href="inscri.css">
+</head>
+<body>
+
+  <nav class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Paises</a>
+            <ul class="submenu">
+                <li><a href="colombia.html">Colombia</a></li>
+                <li><a href="mexico.html">Mexico</a></li>
+                <li><a href="india.html">India</a></li>
+                <li><a href="francia.html">Francia</a></li>
+            </ul>
+        </li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="inscipcion (1).html">Contacto</a></li>
+    </ul>
+</nav>
+
+    <div class="container">
+        <h1>Contacto</h1>
+        <form action="#" method="post">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <h3>No lo pienses mas y viaja con nosotros</h3>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+      
+    <script>
+      const menuItems = document.querySelectorAll('.menu > ul > li');
+      menuItems.forEach(item => {
+          item.addEventListener('click', () => {
+              const submenu = item.querySelector('.submenu');
+              if (submenu) {
+                  submenu.classList.toggle('active');
+              }
+          });
+      });
+  </script>
+      
+</body>
+</html>

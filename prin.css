@@ -1,0 +1,392 @@
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #EAEBEF;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    width: 300px;
+}
+
+.nav__link{
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: 6px ;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: #F6F8FA;
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: #fff;
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+}
+
+
+.nav{
+    background-color: #830248;
+
+    --img1: scale(1);
+    --img2: scale(0);
+}
+
+.nav:has( .dropdown:target ){
+    --img1: scale(0);
+    --img2: scale(1);
+
+    --clip:inset(0 0 0 0);
+
+}
+
+.nav__container{
+    width: 90%;
+    margin: 0 auto;
+    height: 70px;
+
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "title img";
+    justify-content: space-between;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.nav__title{
+    color: #fff;
+    grid-area: title;
+}
+
+
+.nav__menu{
+    grid-area: img;
+    position: relative;
+    z-index: 10;
+
+    transform: var(--img1);
+}
+
+.nav__menu--second{
+    transform: var(--img2);
+}
+
+.nav__icon{
+    width: 30px;
+    display: block;
+}
+
+.dropdown{
+    position: absolute;
+    background-color: #000;
+    width: 75%;
+    max-width: 300px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 1em;
+
+    display: grid;
+    align-content:center ;
+    gap: 1rem;
+
+    overflow-y: auto;
+
+
+    clip-path: var(--clip, inset(0 0 100% 100%));
+    transition: clip-path .5s;
+}
+
+.dropdown__list{
+    list-style: none;
+}
+
+.dropdown__link{
+    color: rgb(184, 187, 191);
+    padding: 1em .7em;
+    text-decoration: none;
+    
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+
+    position: relative;
+    background-color: var(--bg, transparent);
+    border-radius: 6px;
+}
+
+.dropdown__list:has( :checked ){
+    --rows: 1fr;
+    --rotate: rotate(180deg);
+    --bg: #28303B;
+}
+
+.dropdown__check{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.dropdown__arrow{
+    margin-left: auto;
+    transform: var(--rotate, 0);
+    transition: .2s transform;
+}
+
+.dropdown__content{
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    transition: .3s grid-template-rows;
+}
+
+.dropdown__sub{
+    overflow: hidden;
+
+}
+
+.dropdown__li{
+    width: 85%;
+    list-style: none;
+    margin-left: auto;
+}
+
+.dropdown__anchor{
+    padding: 1em 0;
+    display: block;
+    color: #B6BABE;
+    text-decoration: none;
+}
+
+/*carrusel
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#conteItemscarrusel{
+
+    height: 200px;
+    overflow: hidden;/*se utiliza oara esconder todos los items 
+    
+}
+
+.itemcarrusel{
+  
+    height: 200px;
+    position:relative;
+
+}
+.tarjetacarrusel{
+    background-color: rgb(11, 80, 80);
+    height: 100%;
+}
+.flechascarucel{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+/*comienza cada estilo de cada div
+
+#tarjetaCarrusel-1{
+    background-color: rgb(238, 213, 181);
+
+}
+#tarjetaCarrusel-2{
+    background-color: #4e769e;
+}
+#tarjetaCarrusel-3{
+    background-color: #830248;
+}
+
+a{
+    text-decoration: none;
+}
+i{
+    color:black;
+}
+
+#contePuntos{
+  
+    display: flex;
+    justify-content: space-around;
+}
+#contePuntos > a{
+    font-size: 2em;
+    font-style: none;
+    color:black;
+}
+    */
+   /*slider3d */
+   @import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+   @import url('https://fonts.cdnfonts.com/css/poppins');
+   
+   .banner{
+       width: 100%;
+       height: 100vh;
+       text-align: center;
+       overflow: hidden;
+       position: relative;
+   }
+   .banner .slider{
+       position: absolute;
+       width: 200px;
+       height: 250px;
+       top:10%;
+       left:calc(50% - 100px);
+       transform-style: preserve-3d;
+       transform: perspective(1000px);
+       animation: autoRun 20s linear infinite;
+       z-index: 2;
+   }
+   @keyframes autoRun{
+       from{
+           transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+       }to{
+           transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+       }
+   }
+   
+   .banner .slider .item{
+       position:absolute;
+       inset: 0 0 0 0;
+       transform: 
+           rotateY(calc(  (var(--position) - 1) * (360 /var(--quantity)) * 1deg))
+           translateZ(550px);
+   }
+   .banner .slider .item img{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+   }
+   .banner .content{
+       position: absolute;
+       bottom: 0;
+       left: 50%;
+       transform: translateX(-50%);
+       width: min(1400px, 100vw);
+       height: max-content;
+       padding-bottom: 100px;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
+       z-index: 1;
+   }
+   .banner .content h1{
+       font-family: 'ICA Rubrik';
+       font-size: 16em;
+       line-height: 1em;
+       color:#25283b;
+       position: relative;
+   }
+   .banner .content h1::after{
+       position: absolute;
+       inset: 0 0 0 0;
+       content: attr(data-content);
+       z-index: 2;
+       -webkit-text-stroke:2px #d2d2d2;
+       color:transparent;
+   }
+   .banner .content .author{
+       font-family: Poppins;
+       text-align: right;
+       max-width: 200px;
+   }
+   .banner .content h2{
+       font-size: 3em;
+   }
+   .banner .content .model{
+       background-image: url(mundo.png);
+       width: 100%;
+       height: 75vh;
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       background-size: auto 130%;
+       background-repeat: no-repeat;
+       background-position: top center;
+       z-index: 1;
+   }
+
+
+

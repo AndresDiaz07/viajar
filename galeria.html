@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Imágenes</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu > li {
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+}
+
+.menu > li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu > li a:hover {
+    color: #f9c410;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    list-style-type: none;
+    text-align: left;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f9c410;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .imagen {
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        .imagen:hover {
+            transform: scale(1.1);
+        }
+        img {
+            width: 250px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            border-radius: 10px; /* Bordes redondeados */
+        }
+        @media (max-width: 600px) {
+            img {
+                width: 180px; /* Tamaño más pequeño en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!--MENU-->
+ <nav class="navbar">
+    <ul class="menu">
+        <li><a href="index.html">inicio</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-btn">Otros Países </a>
+            <ul class="dropdown-menu">
+                <li><a href="colombia.html">Colombia</a></li>
+                <li><a href="mexico.html">Mexico</a></li>
+                <li><a href="india.html">India</a></li>
+                <li><a href="francia.html">Francia</a></li>
+            </ul>
+        </li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="inscipcion (1).html">Contacto</a></li>
+    </ul>
+</nav>
+
+    <div class="imagen"><img src="cult.png" alt="Imagen 1"></div>
+    <div class="imagen"><img src="colom10.png" alt="Imagen 2"></div>
+    <div class="imagen"><img src="in1.png" alt="Imagen 3"></div>
+    <div class="imagen"><img src="fran1.png" alt="Imagen 4"></div>
+    <div class="imagen"><img src="fran4.png" alt="Imagen 5"></div>
+    <div class="imagen"><img src="in2.jpg" alt="Imagen 6"></div>
+    <div class="imagen"><img src="hist.png" alt="Imagen 7"></div>
+    <div class="imagen"><img src="me1.jpg" alt="Imagen 8"></div>
+    <div class="imagen"><img src="me2.jpg" alt="Imagen 9"></div>
+    <div class="imagen"><img src="ne1.png" alt="Imagen 10"></div>
+    <div class="imagen"><img src="colom2.png" alt="Imagen 11"></div>
+    <div class="imagen"><img src="me3.jpg" alt="Imagen 12"></div>
+    <div class="imagen"><img src="ne2.png" alt="Imagen 13"></div>
+    <div class="imagen"><img src="porta_indo.png" alt="Imagen 14"></div>
+    <div class="imagen"><img src="ult.jpg" alt="Imagen 15"></div>
+    <div class="imagen"><img src="si2.png" alt="Imagen 16"></div>
+    <div class="imagen"><img src="colom7.png" alt="Imagen 17"></div>
+    <div class="imagen"><img src="7im.jpg" alt="Imagen 18"></div>
+    <div class="imagen"><img src="2im.jpg" alt="Imagen 19"></div>
+    <div class="imagen"><img src="francia4.jpg" alt="Imagen 20"></div>
+</body>
+</html>
