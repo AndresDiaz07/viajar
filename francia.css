@@ -1,0 +1,394 @@
+.principal{
+    background-color: rgb(208, 209, 234);
+    border-radius: 20px;
+    position:absolute;
+    left: 370px;
+    margin: 50px;
+    padding: 150px 150px 150px 220px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.uim{
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    width: 400px;
+    border-radius: 20px; 
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.uim:hover{
+    transition: 3s;
+    transform:rotate(10deg);
+}
+
+/*informacion*/
+.info{
+    position:absolute;
+    top: 800px;
+    width: 100%;
+    height: 160%;
+}
+/*.in1:hover{
+    transition: 3s;
+    transform:rotate(10deg);
+}*/
+
+.in1{
+    position:relative;
+    width: 30%;
+    height: 550px;
+    background-color: rgb(208, 209, 234);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+.image {
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.10s ease; /* Suaviza la rotación */
+    
+}
+
+.in1:hover .image {
+    animation: rotate 10s linear infinite; /* Activa la rotación al hacer hover */
+}
+@keyframes rotate {
+   50% { transform: rotate(10deg); }
+}
+.text {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté encima de las imágenes */
+}
+
+/*segundo div*/
+.in2{
+    position: relative;
+    left: 33%;
+    top: -500px;
+    width: 30%;
+    height: 550px;
+    background-color: rgb(208, 209, 234);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+.image1 {
+    border-radius: 10px;
+    position: absolute;
+    right: 100px;
+    top: 270px;
+    height: 50%;
+    width: auto;
+    transition: transform 0.10s ease; /* Suaviza la rotación */
+
+    
+}
+
+.in2:hover .image1 {
+    animation: rotate 10s linear infinite; /* Activa la rotación al hacer hover */
+}
+@keyframes rotate {
+   60% { transform: rotate(-10deg); }
+}
+.text1 {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté encima de las imágenes */
+}
+
+/**/
+.in3{
+    position: relative;
+    left: 66%;
+    top: -1000px;
+    width: 30%;
+    height: 550px;
+    background-color: rgb(208, 209, 234);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+.image2 {
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.10s ease; /* Suaviza la rotación */
+
+    
+}
+
+.in3:hover .image2 {
+    animation: rotate 10s linear infinite; /* Activa la rotación al hacer hover */
+}
+@keyframes rotate {
+   60% { transform: rotate(-10deg); }
+}
+.text2 {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté encima de las imágenes */
+}
+
+/**/
+.in4{
+    position: relative;
+    top: -1150px;
+    width: 30%;
+    height: 550px;
+    background-color: rgb(208, 209, 234);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}.image3 {
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    right: 0px;
+    top: 257px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.10s ease; /* Suaviza la rotación */
+
+    
+}
+
+.in4:hover .image3 {
+    animation: rotate 10s linear infinite; /* Activa la rotación al hacer hover */
+}
+@keyframes rotate {
+   60% { transform: rotate(-10deg); }
+}
+.text3 {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté encima de las imágenes */
+}
+
+/**/
+.in5{
+    position: relative;
+    left: 33%;
+    top: -1650px;
+    width: 30%;
+    width: 30%;
+    height: 550px;
+    background-color: rgb(208, 209, 234);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+.image4 {
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width:100%;
+    height:  auto;
+    transition: transform 0.10s ease; /* Suaviza la rotación */
+}
+
+.in5:hover .image4 {
+    animation: rotate 10s linear infinite; /* Activa la rotación al hacer hover */
+}
+@keyframes rotate {
+   60% { transform: rotate(-10deg); }
+}
+.text4 {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté encima de las imágenes */
+}
+
+/**/
+.in6{
+    position: relative;
+    left: 66%;
+    top: -2150px;
+    width: 30%;
+    width: 30%;
+    height: 550px;
+    background-color: rgb(208, 209, 234);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+.image5 {
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    right: 0px;
+    top: 305px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.10s ease; /* Suaviza la rotación */
+
+    
+}
+
+.in6:hover .image5 {
+    animation: rotate 10s linear infinite; /* Activa la rotación al hacer hover */
+}
+@keyframes rotate {
+   60% { transform: rotate(-10deg); }
+}
+.text5 {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté encima de las imágenes */
+}
+
+/*abajo*/
+.info2{
+    position:relative;
+    top:2250px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-image: url(carru.jpg);
+    
+
+}
+.escrito{
+    margin: 50px;
+    padding: 150px 150px 150px 220px;
+    
+}
+.his{
+    font-size: 70px;
+    font-style: Garamond;
+}
+
+.info3{
+    position:relative;
+    top:2200px;
+    background-color: rgb(208, 209, 234);
+    width: 100%;
+    height: 910PX;
+    
+}
+
+.escrito2{
+    position: relative;
+    top: 18px;
+    left: 8%;
+    width: 40%;
+    height: auto;
+    margin: 20px;
+    
+}
+.ultim{
+    position: relative;
+    top:-750px;
+    left: 54%;
+    width: 40%;
+    height:auto;
+}
+
+
+video{
+    position: relative;
+    top: 2200px;
+}
+
+/*menu*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(2, 2, 2);
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu > li {
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+}
+
+.menu > li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu > li a:hover {/*color de la letra del menu */
+    color: #f9c410;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    list-style-type: none;
+    text-align: left;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f9c410;/*color dek hover del menu*/
+    color: black;/*color de letra*/
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+p{
+    color:#222;
+}
+.ins{
+    color: #ffffff;
+}
